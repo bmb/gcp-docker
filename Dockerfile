@@ -14,7 +14,7 @@ RUN apt-get install -y wget python
 
 # install GCP client
 RUN cd /opt && \
-  wget -c https://s3.amazonaws.com/connect.globusonline.org/linux/stable/globusconnectpersonal-latest.tgz && \
+  wget -c https://downloads.globus.org/globus-connect-personal/linux/stable/globusconnectpersonal-latest.tgz && \
   tar xzf globusconnectpersonal-latest.tgz
 RUN rm /opt/globusconnectpersonal-latest.tgz
 RUN mv /opt/globusconnectpersonal-* /opt/globusconnectpersonal
